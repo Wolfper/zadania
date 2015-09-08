@@ -1,15 +1,17 @@
-#!/usr/bin/python
-#-*- coding: utf- -*-
-'''
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
 #Python version: 3.3
 exercise: 4
 site: http://www.ling.gu.se/~lager/python_exercises.html
 
 Write a function that takes a character (i.e. a string of length 1)
 and returns True if it is a vowel, False otherwise.
-'''
+"""
 
 import unittest
+
+__author__ = 'Paweł Hały'
 
 
 def character_vowel(character):
@@ -24,7 +26,6 @@ def character_vowel(character):
 
     :return: True or False
     '''
-
     character = character.lower()
     vowel_character = 'aeoiuy'
     if character in vowel_character:
@@ -37,7 +38,6 @@ class Character_vowelTest(unittest.TestCase):
     '''
     Unittest function character_vowel
     '''
-
     def test_Success(self):
         '''
         Check if character is in vowel
